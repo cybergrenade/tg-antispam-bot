@@ -5,15 +5,10 @@ Telegram-бот для автоматической модерации чато�
 Бот в реальном времени анализирует поток сообщений, выявляет спам на русском языке с помощью дообученной языковой модели (RuBERT).
 
 ## ✨ Ключевые особенности (Features)
-* **High-Precision ML Classification:** В качестве ядра используется дообученная архитектура Transformer (`cointegrated/rubert-tiny2`), демонстрирующая F1-Score **~0.96** на миноритарном классе (спам).
-* **False Positive Mitigation:** В случае подозрения на спам бот временно изолирует сообщения пользователя и выдает математическую капчу. Непрохождение капчи за установленное время приводит к бану.
-* **Multi-tenant архитектура & Дашборды:** Логирование событий (удаления, баны) в SQLite с жесткой привязкой к `chat_id`. Встроенная команда `/stats` для администраторов с изолированной аналитикой по конкретной группе.
-* **RBAC (Role-Based Access Control):** Иммунитет для создателей и администраторов сообществ.
-
-## 🛠 Стек технологий
-* **Machine Learning:** PyTorch, Transformers (Hugging Face), CatBoost, Scikit-learn, Pandas.
-* **Backend:** Python 3.11, aiogram 3.28.2, aiosqlite, asyncio.
-* **Инфраструктура:** SQLite.
+* В качестве ядра используется дообученная архитектура Transformer (`cointegrated/rubert-tiny2`), демонстрирующая F1-Score **~0.96**.
+* В случае подозрения на спам бот временно изолирует сообщения пользователя и выдает математический пример. Отсутствие верного ответа за установленное время приводит к бану.
+* Логирование событий (удаления, баны) в SQLite. Встроенная команда `/stats` для администраторов с аналитикой по конкретной группе.
+* Иммунитет для создателей и администраторов сообществ.
 
 ## 🔬 Исследовательская часть (Jupyter Notebooks)
 В директории `/notebooks` представлены этапы разработки ML-модели:
@@ -29,8 +24,8 @@ Telegram-бот для автоматической модерации чато�
 
 1. Склонируйте репозиторий:
 ```bash
-git clone [https://github.com/cybergrenade/ml-telegram-moderator.git](https://github.com/cybergrenade/ml-telegram-moderator.git)
-cd ml-telegram-moderator
+git clone [https://github.com/cybergrenade/tg-antispam-bot.git](https://github.com/cybergrenade/tg-antispam-bot.git)
+cd tg-antispam-bot
 ```
 
 2. Установите зависимости:
