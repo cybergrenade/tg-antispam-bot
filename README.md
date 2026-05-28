@@ -18,13 +18,13 @@ Telegram-бот для автоматической модерации чато�
 
 Все модели обучены на датасете из 500 000 строк. В ноутбуках представлены метрики и матрица ошибок.
 
-**Доступ к весам модели:** Готовая к инференсу модель опубликована на Hugging Face Hub: [ссылка](https://huggingface.co/super-apple/spam-classifier-ru/). Бот автоматически загрузит веса при первом запуске.
+**Доступ к весам модели:** Готовая к инференсу модель опубликована на Hugging Face Hub: [https://huggingface.co/super-apple/spam-classifier-ru/](https://huggingface.co/super-apple/spam-classifier-ru/). Бот автоматически загрузит веса при первом запуске.
 
 ## 🚀 Быстрый старт (Installation)
 
 1. Склонируйте репозиторий:
 ```bash
-git clone [https://github.com/cybergrenade/tg-antispam-bot.git](https://github.com/cybergrenade/tg-antispam-bot.git)
+git clone https://github.com/cybergrenade/tg-antispam-bot.git
 cd tg-antispam-bot
 ```
 
